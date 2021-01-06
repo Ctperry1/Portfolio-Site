@@ -237,7 +237,7 @@ header{
     font-family: var(--ff-name);
     float: left;
     padding-top: .25em;
-    padding-left: 1em;
+    padding-left: .5em;
 }
 
 .logo{
