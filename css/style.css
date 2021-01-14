@@ -11,7 +11,7 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: #fff;
+    --clr-light: rgb(255, 255, 255);
     --clr-dark: #303030;
     --clr-accent: #00deee;
 
@@ -123,11 +123,10 @@ h3{
     margin-bottom: 1em;
 }
 
-/* Header */
+/* Header and Navigation */
 
 header{
     display: flex;
-    /*justify-content: space-between;*/
     padding: 1em;
 }
 
@@ -140,7 +139,8 @@ header{
     left: 0;
     right: 0;
     z-index: 100;
-    transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(50%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -182,6 +182,7 @@ header{
     width: 50%;
     margin-left: 50%;
     cursor: default;
+    opacity: 1;
 }
 
 .nav-open .nav-toggle{
@@ -321,6 +322,7 @@ header{
     max-width: 500px;
     margin: 0 auto;
     padding-top: 1em;
+    /*background: rgba(0, 0, 0, .55);*/
     background-size: cover;
     border-radius: 5px;
 }
